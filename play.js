@@ -16,6 +16,6 @@ const net = require("net");
 //   });
 //   return conn;
 // };
-const connect = require ('./"client"')
+const connect = require ('./client')
 console.log("Connecting ...");
 connect();
