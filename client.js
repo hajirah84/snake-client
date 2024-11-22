@@ -15,12 +15,11 @@ const connect = function () {
     });
     conn.on ("connect", (event) => {
         console.log((event),"Successfully connected to game server")
-        conn.write("Name: SNK");
+        conn.write("Name: Haj");
+        // conn.write("Move: up");
       });
-      client.setEncoding("utf8"); // interpret data as text
-      client.on("data", (data) => {
-        console.log("Name: Haj ", data);
-      });
+
+      
     
     return conn;
   };
