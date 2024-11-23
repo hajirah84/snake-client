@@ -23,6 +23,10 @@ const stdin = process.stdin;
     } else if (key === "d") {
           connection.write ("Move: right");
         }
+        if (key === "1") connection.write("Say: Let's get started!");
+        if (key === "2") connection.write("Say: You won't be able to beat me now!");
+        if (key === "3") connection.write("Say: Oh you need practice");
+    
     stdin.on("data", handleUserInput);
     return stdin;
   });
